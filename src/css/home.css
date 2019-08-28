@@ -1,0 +1,87 @@
+.home{
+    width:100%;
+    height:100vh;
+    
+    background: var(--gray-1-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:url('../../src/images/afternoon.jpg');
+    background-position: center;
+    background-size: cover;
+
+    /* & .home-nav{
+        height: calc(1*var(--nav-height));
+        width:100%;
+    } */
+
+    & .home-container-information{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width:100%;
+        height:calc(100vh / 2);
+
+        & .home-title{
+            width:35%;
+            height:70%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-right: 96px;
+            color:var(--white-color);
+            background:var(--blue-dark-color-opacity);
+            padding: 20px;
+
+            @media (--small){
+                margin:0;
+                width:90%;
+                align-items:center;
+                text-align:center;
+            } 
+
+            & h1{
+                margin-bottom: 32px;
+                
+            }
+
+            & h3{
+                margin-bottom: 32px; 
+            }
+
+            & button{
+                @apply --button-secondary;
+            }
+        }
+
+        & .home-text{
+            width:20%;
+            height:70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* background:var(--white-color); */
+
+            @media (--small){
+                display:none;
+            } 
+
+            /* & p{
+                margin:16px 16px;
+            } */
+
+            & figure{
+                width:100%;
+                height:100%;
+                background-image:url('../../src/images/mujer.jpg');
+                background-position: center;
+                background-size: contain;
+                background-repeat:no-repeat;
+            }
+        }
+    }
+}

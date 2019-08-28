@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMM Ingeniería</title>
+    <link rel="stylesheet" href="dist/css/styles-index.css"/>
+</head>
+<body>
+    <nav>
+        <div class="container-logo">
+            <figure></figure>
+        </div>
+        <div class="container-menu">
+            <div class="menu-list">
+                <div class="item-list" onclick="irHome()">
+                    <div class="home-item">Inicio</div>
+                </div>
+                <div class="item-list" onclick="irAbout()">
+                    <div class="about-item">Acerca de</div> 
+                </div>
+                <div class="item-list" onclick="irClient()">
+                    <div class="product-item">Clientes</div> 
+                </div>
+                <div class="item-list" onclick="irProduct()">
+                    <div class="product-item">Productos</div> 
+                </div>
+                <div class="item-list" onclick="irContact()">
+                    <div class="contact-item">Contacto</div>         
+                </div>
+            </div>
+            <div class="menu-icon-container">
+                <i class="icon-menu" id="icon-menu" onclick=" mostrarDesaparecerModal()">Me</i>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay hidden" id="overlay">
+        <div class="modal" id="modal">
+            <div class="modal-home" onclick="mostrarDesaparecerModal();irHome()">Inicio</div>
+            <div class="modal-about" onclick="mostrarDesaparecerModal();irAbout()">Acerca de</div>
+            <div class="modal-client" onclick="mostrarDesaparecerModal();irClient()">Clientes</div>
+            <div class="modal-product" onclick="mostrarDesaparecerModal();irProduct()">Productos</div>
+            <div class="modal-contact" onclick="mostrarDesaparecerModal();irContact()">Contacto</div>
+        </div>
+    </div>
+    <section class="home" id="home">
+        <!-- <div class="home-nav"></div> -->
+        <div class="home-container-information">
+            <div class="home-title">
+                <h1>EMM Ingeniería</h1>
+                <h3>Obras civiles, Electromecánica, Climatización, Electricidad e Ingeniería</h3>
+                <button onclick="irContact()">Cotizar</button>
+            </div>
+            <div class="home-text">
+                <figure></figure>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea, laboriosam dolor facere, ratione nulla obcaecati recusa.</p> -->
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container-about">
+            <div class="margin-about">
+                <h2>¿Quiénes Somos?</h2>
+                <p>EMM es una empresa chilena creada en el año 2016. Nos dedicamos a los servicios de Obras Civiles, Electromecánica e Ingeniería. Orientados a clientes tanto públicos como privados </p>
+                <h2>Visión</h2>
+                <p>Ser considerados por nuestros clientes a los cuales ofrecemos servicios, como la mejor opción dentro de las empresas de nuestro rubro. Entregando compromiso, calidad y confiabilidad, aptos de cubrir las necesidades de nuestros clientes</p>
+                <h2>Misión</h2>
+                <p>Ofrecer soluciones efectivas por especialistas en trabajos de obras civiles, mantenimiento electromecánico, reparación, instalación, construcción y automatización. Logrando ser eficientes y profesionales en los servicios a realizar, para entregar una mayor seguridad a nuestros clientes</p>
+            </div>
+        </div>
+        <div class="container-image-about">
+            <div class="image-about-margin">
+                <figure></figure>
+                <figure></figure>
+            </div>
+        </div>
+    </section>
+    <section class="client" id="client">
+        <div class="container-client">
+            <div class="margin-client">
+                <h2>Nuestros Clientes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quisquam laboriosam delectus maxime praesentium aspernatur telias?</p>
+                <h2>Título 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis soluta libero culpa fugiat distinctio aut in beatae numqdolor veniaiis, consequatur sunt?</p>
+                <h2>Título 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora numquam vero ex veniam enim, libeibus suscipit.</p>    
+            </div>
+        </div>
+        <div class="container-image-client">
+            <div class="image-client-margin">
+                <div class="container-client">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+                <div class="container-client">
+                    <figure></figure>
+                    <figure></figure>
+                </div>
+                <div class="container-client">
+                    <figure></figure>
+                    <figure></figure>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="product" id="product">
+        <div class="container-product-icons">
+            <div class="icons-margin">
+                <div id="icon-container-1" class="container-icon" onclick="verProducto1()">
+                    <i class="icon-industrial"></i>
+                </div>
+                <div id="icon-container-2" class="container-icon" onclick="verProducto2()">
+                    <i class="icon-mechanic"></i>
+                </div>           
+                <div id="icon-container-3" class="container-icon" onclick="verProducto3()">
+                    <i class="icon-air"></i>
+                </div>
+                <div id="icon-container-4" class="container-icon" onclick="verProducto4()">
+                    <i class="icon-engineering"></i>
+                </div>
+                <div id="icon-container-5" class="container-icon" onclick="verProducto5()">
+                    <i class="icon-electric"></i>
+                </div>   
+            </div>   
+        </div>
+        <div class="container-product">
+            <div class="item-product visible" id="product1">
+                <div class="product-margin">
+                    <div class="information-image">
+                        <div class="information-image-margin">
+                            <figure></figure>
+                        </div>   
+                    </div>
+                    <div class="information-text">
+                        <div class="information-text-margin">
+                            <h3>Obras Civiles</h3>
+                            <p>Confección de estructuras metálicas en general, gasfitería/grifería certificadas, albañilería, pintura, instalación eléctrica certificadas (según norma chilena), carpintería en obra gruesa/terminaciones, muebles en línea plana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-product hidden" id="product2">
+                <div class="product-margin">
+                    <div class="information-image">
+                        <div class="information-image-margin">
+                            <figure></figure>
+                        </div>   
+                    </div>
+                    <div class="information-text">
+                        <div class="information-text-margin">
+                            <h3>Electromecánica</h3>
+                            <p>Reparación y mantenimiento de motores y bombas. Instalación de cámaras de seguridad. Soluciones Técnicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-product hidden" id="product3">
+                <div class="product-margin">
+                    <div class="information-image">
+                        <div class="information-image-margin">
+                            <figure></figure>
+                        </div>   
+                    </div>
+                    <div class="information-text">
+                        <div class="information-text-margin">
+                            <h3>Climatización</h3>
+                            <p>Proyectos de climatización, asesorías técnicas de especialistas y mantenimiento de equipos de climatización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-product hidden" id="product4">
+                <div class="product-margin">
+                    <div class="information-image">
+                        <div class="information-image-margin">
+                            <figure></figure>
+                        </div>   
+                    </div>
+                    <div class="information-text">
+                        <div class="information-text-margin">
+                            <h3>Ingeniería</h3>
+                            <p>Servicio de ingeniería conceptual, básica y detalle. Servicios de estudios técnicos. Diseño mecánico de equipos, partes y piezas. Asesoría en sistemas de automatización industrial. Diseño mecánico en aplicaciones de equipos y maquinarias. Elaboración de planos en 2D y 3D. Método de elementos finitos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-product hidden" id="product5">
+                <div class="product-margin">
+                    <div class="information-image">
+                        <div class="information-image-margin">
+                            <figure></figure>
+                        </div>   
+                    </div>
+                    <div class="information-text">
+                        <div class="information-text-margin">
+                            <h3>Electricidad</h3>
+                            <p>Electricidad domiciliaria, enchufes, interruptores, fluorescentes y plafones. Electricidad industrial, tableros eléctricos, salas eléctricas, grupo electrógeno, sensores de movimiento, fotoceldas y ascensores. Energía trifásica, procesos eléctricos industriale sde baja y media tensión. Diagramas de control y fuerza en procesos industriales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container-contact-information">
+            <div class="contact-information-margin">
+                <div class="contact-direction">
+                    <div class="direction-icon">
+                        <i class="icon-location"></i>
+                    </div>
+                    <p>Avenida Nicolás Tirado 842</p>
+                </div>
+                <div class="contact-phone">
+                    <div class="phone-icon">
+                        <i class="icon-phone"></i> 
+                    </div>
+                    <p>+56 2 28131806</p>
+                </div>
+                <div class="contact-email">
+                    <div class="email-icon">
+                        <i class="icon-mail"></i> 
+                    </div>
+                    <p>e.vasquez@hatte.com</p>
+                </div>
+                <!-- <div class="contact-cell">
+                    <div class="cell-icon">
+                        <i></i> 
+                    </div>
+                    <p>+569 98705421</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="container-contact-form">
+            <div class="form">
+                <div class="form-margin">
+                    <h2>Formulario</h2>
+                    <div class="form">
+                        <input type="text" placeholder="Tú Nombre"></input>
+                        <input type="email" placeholder="Tú Email"></input>
+                        <input class="mensaje" type="text" placeholder="Tú Mensaje"></input>
+                        <button>Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-enterprise">
+            <div class="enterprise-margin">
+                <figure></figure>
+                <p>Avenida Nicolas Tirado 842</p>
+                <p>Antofagasta, Chile</p>
+                <!-- <p>Lorem ipsum dolor sit, amet</p> -->
+            </div>
+        </div>
+        <div class="container-social">
+            <div class="social-margin">
+                <div class="facebook">
+                    <i class="icon-facebook"></i>
+                </div>
+                <div class="instagram">
+                    <i class="icon-instagram"></i>
+                </div>
+                <!-- <div class="google">
+                    <i></i>
+                </div> -->
+                <div class="gmail">
+                    <i class="icon-google"></i>
+                </div>
+            </div>
+            <div class="container-somti">
+                <p>Powered by</p>
+                <figure></figure>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
+

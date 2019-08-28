@@ -1,0 +1,95 @@
+.about{
+    width:100%;
+    /* height:100vh; */
+    height: var(--body-height);
+    background: var(--blue-dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @media (--small){
+       flex-direction:column;
+    } 
+
+    & .container-about{
+        width:50%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:var(--white-color);
+
+        @media (--small){
+            width:100%;
+            height:100%;
+         } 
+
+        & .margin-about{
+            width:80%;
+            height:80%;
+            display:flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media (--small){
+                width:90%;
+                height:100%;
+             } 
+
+            & h2{
+                margin-bottom: var(--size-letter);
+            }
+
+            & p{
+                margin-bottom: var(--size-letter);
+            }           
+        }  
+    }
+
+    & .container-image-about{
+        width:50%;
+        height:100%;
+        background:var(--white-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (--small){
+           display:none;
+         } 
+ 
+
+        & .image-about-margin{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column; 
+            width:calc(100% - 32px);
+            /* height:calc(100% - 32px); */
+            height:75%;
+
+            @media (--large){
+                height:70%;
+            } 
+
+            @media (--medium){
+                height:50%;
+             }
+
+            & figure{
+                width:calc((16/9) * 250px);
+                height:250px;
+                background:var(--blue-main-color);
+
+                @media (--medium){
+                    width:calc((16/9) * 150px);
+                    height:150px;
+                } 
+            }
+        }
+
+
+        
+    }
+}

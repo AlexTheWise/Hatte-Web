@@ -1,0 +1,226 @@
+:root{
+    /* Tamaño de Letra */
+    --size-letter:16px;
+
+    /* Colores del Proyecto */
+    --black-color:rgba(0,0,0,1);
+    --white-color:rgba(255,255,255,1);
+    --gray-1-color:rgba(127,127,127,1);
+    --gray-2-color:rgba(190,190,190,1);
+    --purple-main-color:rgba(128,2,99,1);
+    --purple-light-color:rgba(233,7,156,1);
+
+    --blue-main-color:rgba(0,127,255,1);
+    --blue-dark-color:rgba(23,34,77,1);
+    --blue-dark-color-opacity:rgba(23,34,77,0.4);
+    --gray-background-color:rgba(245,250,250,1);
+    --blue-light-color:rgba(23,233,225,1);
+
+    /* Tamaños del contenido */
+    --nav-height:calc(5*var(--size-letter));
+    --body-height:calc(100vh - var(--nav-height));
+    --max-view-port-height: 1366px;
+    --max-view-port-width: 1024px;
+
+    /* Botones */
+    --button-secondary:{
+        font-weight: 700;
+        width:calc(8.75*var(--size-letter));
+        text-transform: uppercase;
+        border:1px solid var(--white-color);
+        color:var(--white-color);
+        /* border: 1px solid var(--purple-main-color); */
+        border-radius: 66px 66px 66px 66px;
+        /* color: var(--purple-main-color); */
+        padding: calc(0.7*var(--size-letter)) 0px;
+        font-size:calc(0.8*var(--size-letter));
+        background:none;
+        outline:none; 
+        &:hover{
+          background:var(--blue-light-color);
+          border: 1px solid var(--blue-light-color);
+          color:var(--blue-dark-color);
+          cursor: pointer;
+        }
+      }
+
+
+  /* --gray-1-color:rgba(53,53,53,1);
+  --gray-2-color:rgba(76,76,76,1);
+  --gray-3-color:rgba(127,127,127,1);
+  --gray-4-color:rgba(190,190,190,1);
+  --red-color:rgba(248,0,0,1); */
+  /* --blue-main-color:rgba(81,189,186,1);
+  --blue-dark4-color:rgba(46,152,147,1);
+  --blue-dark3-color:rgba(14,89,82,1);
+  --blue-dark2-color:rgb(6, 58, 50);
+  --blue-dark1-color:rgba(28,45,42,1);
+  --blue-light1-color:rgba(102,203,198,1);
+  --blue-light2-color:rgba(136,228,221,1);
+  --blue-light3-color:rgba(178,255,247,1);
+  --blue-light4-color:rgba(218,251,243,1); */
+
+  /* --red-color:rgba(191,0,23,1);
+  --orange-color:rgba(247,155,11,1);
+  --green-color:rgba(63,122,77,1); */
+
+  /* Colores Paleta Rosada */
+  /* --purple-main-color:rgba(128,2,99,1);
+  --purple-light-color:rgba(233,7,156,1);
+  --purple-dark-color:rgba(182,18,134,1);
+  --purple-menu-color:rgba(39,39,76,1);
+  --pink-body-color:rgba(175,107,116,1);
+  --body-pink-radial:radial-gradient(circle, var(--white-color), var(--pink-body-color)); */
+
+  /* --purple-main-color-opacity:rgba(128,2,99,0.6);
+  --purple-menu-color-opacity:rgba(39,39,76,0.6); */
+
+
+  /* --nav-height:calc(3.75*var(--size-letter));
+  --footer-height:var(--nav-height);
+  --body-height: calc(100vh - 2 * var(--nav-height));
+  --body-height-in-3:calc(var(--body-height) / 3);
+  --body-height-in-5:calc(var(--body-height) / 5);
+  --body-height-in-4:calc(var(--body-height) / 4);
+  --principal-height-in-4: calc( 100vh / 4);
+  --principal-height-in-5: calc(100vh / 5);
+  --credential-height-in-5:calc(calc(100vh - var(--nav-height))/5); */
+
+  /* --button-main:{
+    font-weight: 700;
+    width:calc(15.625*var(--size-letter));
+    text-transform: uppercase;
+    border: none;
+    border-radius: 66px 66px 66px 66px;
+    background-color: var(--purple-menu-color);
+    color: var(--white-color);
+    padding: calc(1*var(--size-letter)) 0px;
+    font-size:calc(0.8125*var(--size-letter));
+    outline:none;
+  }
+
+  --button-secondary:{
+    font-weight: 700;
+    width:calc(8.75*var(--size-letter));
+    text-transform: uppercase;
+    border: 1px solid var(--purple-main-color);
+    border-radius: 66px 66px 66px 66px;
+    color: var(--purple-main-color);
+    padding: calc(0.7*var(--size-letter)) 0px;
+    font-size:calc(0.625*var(--size-letter));
+    background:none;
+    outline:none; 
+    &:hover{
+      background:var(--purple-light-color);
+      border: 1px solid var(--purple-light-color);
+      Color:var(--white-color);
+    }
+  }
+
+  --button-ghost:{
+    font-weight: 700;
+    width:calc(9.375*var(--size-letter));
+    text-transform: uppercase;
+    border: 2px solid var(--white-color);
+    border-radius: 66px 66px 66px 66px;
+    color: var(--white-color);
+    padding: calc(calc(20/30)*var(--size-letter)) 0px;
+    font-size:calc(0.625*var(--size-letter));
+    background:none;
+    outline:none;
+    &:hover{
+      background:var(--purple-light-color);
+      border: 2px solid var(--purple-light-color);
+      Color:var(--white-color);
+    }
+  }
+
+  --button-tertiary:{
+    font-weight: 700;
+    width:calc(4.6875*var(--size-letter));
+    text-transform: uppercase;
+    border-radius: 16px;
+    border:none;
+    color: var(--purple-light-color);
+    padding: calc(calc(10/30)*var(--size-letter)) 0px;
+    font-size:calc(0.625*var(--size-letter));
+    background:var(--white-color);
+    outline:none;
+    text-shadow:none;
+    &:hover{
+      background:var(--purple-light-color);
+      Color:var(--white-color);
+    }
+  } */
+
+
+  @media screen and (min-width: 480px) {
+    --size-letter:16px;
+  };
+
+  /* @media screen and (min-width: 767px) {
+    --size-letter:24px;
+  }; */
+
+  /* @media screen and (min-width: 1024px) {
+    --size-letter:16px;
+  }; */
+
+  
+
+  /* @keyframes modalOut{
+    0%{
+      right:0px;
+    }
+    100%{
+        transform:translateX(-2000px);
+    }
+  } */
+}
+
+@custom-media --extra-small (width<480px);
+@custom-media --small (width<768px);
+@custom-media --medium (width<1024px);
+@custom-media --large (width<1366px);
+@custom-media --extra-large (width>=1366px);
+
+
+@keyframes verProducto{
+  0%{
+      transform: translateX(200%);
+  }
+  100%{
+      transform:translateX(0);
+  }
+}
+
+@keyframes ocultarProducto{
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform:translateX(200%);
+  }
+}
+
+@keyframes modalIn{
+  0%{
+      transform: translateX(200%);
+  }
+  100%{
+      transform:translateX(100%);
+  }
+}
+
+@keyframes modalOut{
+  0%{
+      transform: translateX(100%);
+  }
+  100%{
+      transform:translateX(200%);
+  }
+}
+
+
+
+

@@ -1,0 +1,113 @@
+.client{
+    width:100%;
+    /* height:100vh; */
+    height: var(--body-height);
+    background: var( --white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @media (--small){
+        flex-direction:column;
+     } 
+
+    & .container-client{
+        width:50%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (--small){
+            display:none;
+         } 
+
+        & .margin-client{
+            width:80%;
+            height:80%;
+            display:flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media (--small){
+                width:90%;
+                height:100%;
+             } 
+
+            & h2{
+                margin-bottom: var(--size-letter);
+            }
+
+            & p{
+                margin-bottom: var(--size-letter);
+            }
+            
+        }
+        
+    }
+
+    & .container-image-client{
+        width:50%;
+        height:100%;
+        background:var(--blue-main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (--small){
+            width:100%;
+            height:100%;
+         } 
+
+
+        & .image-client-margin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+            width:calc(100% - 32px);
+            height:calc(100% - 32px);
+            @media (--small){
+                width: 100%;
+                height:100%;
+            } 
+
+
+            & .container-client{
+                width:70%;
+                height:33%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction:row;
+                max-width:500px;
+
+                @media (--small){
+                    width: 70%;
+                    height:33.3%;
+                } 
+
+
+
+                & figure{
+                    width:150px;
+                    height:150px;
+                    background:var(--white-color);
+                    border-radius: 50%;
+
+                    @media (--medium){
+                        width: 100px;
+                        height:100px;
+                    } 
+
+   
+                    
+                }
+            }
+       
+            
+        }
+
+    }
+}

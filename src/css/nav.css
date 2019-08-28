@@ -1,0 +1,104 @@
+nav{
+    position: fixed;
+    width:100%;
+    height: calc(1*var(--nav-height));
+    display: flex;
+    flex-direction: row;
+    background:var(--black-color);
+    z-index: 1;
+    max-width:2000px;
+
+    & .container-logo{
+        /* width: calc(7*var(--size-letter)); */
+        /* width:calc(10*var(--size-letter)); */
+        width:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        & figure{
+            /* width:calc(8*var(--size-letter));
+            height:calc(4*var(--size-letter)); */
+            width:calc((3.21) * 50px);
+            height:50px;
+            /* background:var(--blue-main-color); */
+            background-image:url('../../src/images/logo-hatte.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 8px;
+        }
+    }
+    & .container-menu{
+        /* width: calc(18*var(--size-letter)); */
+        width:calc(100% - calc(5*var(--size-letter)));
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        
+
+        & .menu-icon-container{
+            display: none;
+            width:50px;
+            height:50px;
+            background:yellow;
+            margin-right:32px;
+        
+            @media (--medium){
+                display:block;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            } 
+
+            & .icon-menu{
+                width:30px;
+                height:30px;
+                background:green;
+                text-align: center;
+                line-height: 30px;
+                cursor:pointer;
+            }
+            
+        }
+
+        & .menu-list{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:row;
+            height: calc(1*var(--nav-height));
+            margin-right:80px;
+
+            @media (--medium){
+                display:none;
+            } 
+
+
+
+
+            & .item-list{
+                padding: calc(calc(var(--nav-height) - 40px)/2) 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                color:var(--white-color);
+                font-weight: 400;
+                 & div{
+                     line-height: 40px;
+                     height:40px;     
+                 }
+                 &:hover{
+                     & div{
+                         height:38px;
+                         border-bottom:2px solid var(--white-color);
+                         cursor:pointer;
+                         
+                     }
+                 }
+              
+                
+            }
+        }
+    }
+}
